@@ -27,10 +27,24 @@ class CarForm extends Component {
             <div>
                 <h2>Add a Car</h2>
                 <form onSubmit={this.handleSubmit}>
-                    <input required type="text" ref={(input) => this.getManufacturer = input} placeholder="Manufacturer"/><br />
-                    <input required type="text" ref={(input) => this.getName = input} placeholder="Name"/><br />
-                    <input required type="number" ref={(input) => this.getHorsepower = input} placeholder="Horsepower"/><br />
-                    <button>Add Car</button>
+                    <div className="inputBlock">
+                        <label>Car Manufacturer:</label><br />
+                        <input required type="text" ref={(input) => this.getManufacturer = input} placeholder="Manufacturer"/><br />
+                    </div>
+
+                    <div className="inputBlock">
+                        <label>Car Name:</label><br />
+                        <input required type="text" ref={(input) => this.getName = input} placeholder="Name"/><br />
+                    </div>
+
+                    <div className="inputBlock">
+                        <label>Horsepower:</label><br />
+                        <input required type="number" ref={(input) => this.getHorsepower = input} placeholder="Horsepower"/><br />
+                    </div>
+
+                    <div className="buttonBlock">
+                        <button>Add Car</button>
+                    </div>
                 </form>
             </div>
         );

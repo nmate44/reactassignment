@@ -1,38 +1,88 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #212224;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header */
+.header {
+  background: #212224;
   color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Car Form */
+.carForm-container {
+  background: #c3cede;
+  padding: 20px;
+  padding-right: 35px;
+  flex: 20%;
+}
+
+.carForm-container h2 {
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CarForm Input/Button blocks */
+.inputBlock {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.inputBlock input {
+  width: 95%;
+  padding: 10px;
+  border: none;
+}
+
+.buttonBlock {
+  padding-top: 10px;
+}
+
+.buttonBlock button {
+  width: 100%;
+  padding: 20px;
+  background: #212224;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.carList-container {
+  flex: 75%;
+  min-height: 650px;
+  background: #d0d5db;
+}
+
+/* Footer */
+.footer {
+  background: #212224;
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 15px;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
