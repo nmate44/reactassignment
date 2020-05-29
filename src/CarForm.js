@@ -13,9 +13,9 @@ class CarForm extends Component {
             id: new Date(),
             manufacturer,
             name,
-            horsepower
+            horsepower,
+            isEdited: false
         }
-        console.log(data);
         this.props.dispatch({type:'ADD_CAR', data});
         this.getManufacturer.value = '';
         this.getName.value = '';
