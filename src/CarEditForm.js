@@ -19,8 +19,8 @@ class CarEditForm extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Add a Car</h2>
+            <div className="carEdit-block">
+                <h2>Editing a Car</h2>
                 <form onSubmit={this.handleEdit}>
                     <input required type="text"
                            ref={(input) => this.getManufacturer = input}

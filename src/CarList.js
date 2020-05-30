@@ -8,7 +8,7 @@ import CarEditForm from "./CarEditForm";
 class CarList extends Component {
     render() {
         return (
-            <div>
+            <div className="carList-block">
                 <h2>List of Cars</h2>
                 {this.props.cars.map((car) => (
                     <div key={car.id}>

@@ -67,22 +67,98 @@ body {
   border: none;
 }
 
+.buttonBlock button:hover {
+  background: #6d737a;
+  cursor: pointer;
+}
+
+/* Car List */
 .carList-container {
   flex: 75%;
-  min-height: 650px;
   background: #d0d5db;
+  min-height: 600px;
+  width: 100%;
+}
+
+.carRecord {
+  background: #c3cede;
+  column-count: 3;
+  column-span: all;
+  margin: 10px;
+
+}
+
+.dataBlock {
+  margin: 0;
+}
+
+.dataBlock h2 {
+  margin: 0;
+}
+
+.dataBlock button {
+  padding: 8px;
+  margin-left: 15px;
+  width: 100px;
+  background: #212224;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.dataBlock button:hover {
+  background: #6d737a;
+  cursor: pointer;
+}
+
+.carList-block h2{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CarEdit */
+.carEdit-block {
+  background: #c3cede;
+  margin: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+.carEdit-block input {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.carEdit-block button {
+  padding: 8px;
+  margin-left: 15px;
+  width: 100px;
+  background: #212224;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.carEdit-block button:hover {
+  background: #6d737a;
+  cursor: pointer;
 }
 
 /* Footer */
 .footer {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #212224;
   color: white;
   text-transform: uppercase;
   font-size: 22px;
-  padding: 15px;
   width: 100%;
   min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
